@@ -1,0 +1,7 @@
+{
+  "name": "iMosque",
+  "description": "A comprehensive Islamic lifestyle app featuring mosque finding, prayer times, donations, matchmaking, and AI-powered religious consultation.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
