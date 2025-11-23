@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, MapPin, Calendar, MessageCircle, Heart, Video, Users, Plane, BookOpen } from 'lucide-react';
+import { Home, MapPin, Calendar, MessageCircle, Heart, Video, Users, Plane, BookOpen, Warehouse } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
@@ -26,11 +26,17 @@ const Navbar: React.FC = () => {
     <>
       {/* Desktop Header */}
       <header className="hidden md:flex items-center justify-between px-6 py-4 bg-white shadow-sm border-b border-slate-100 sticky top-0 z-50">
-        <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold">
-            iM
+        <div className="flex items-center space-x-3 cursor-pointer" onClick={() => window.location.hash = '#'}>
+          {/* Code-based Logo to prevent broken images */}
+          <div className="bg-emerald-600 p-2 rounded-xl shadow-lg shadow-emerald-200 flex items-center justify-center">
+             <Warehouse size={24} className="text-white fill-white" />
           </div>
-          <span className="text-xl font-bold text-slate-800">iMosque</span>
+          <div className="flex flex-col">
+            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-700 to-emerald-500 leading-none">
+              iMosque
+            </span>
+            <span className="text-[10px] text-slate-400 tracking-wider font-medium">ISLAMIC LIFESTYLE</span>
+          </div>
         </div>
         <nav className="flex space-x-1">
           {navItems.map((item) => (

@@ -57,6 +57,14 @@ export const TODAY_PRAYER: PrayerTime = {
   isha: '19:15',
 };
 
+export const HIJRI_DATE = "12 Ramadan 1445H";
+
+export const DAILY_QUOTE = {
+  textAr: "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+  translation: "For indeed, with hardship [will be] ease.",
+  source: "Surah Ash-Sharh (94:5)"
+};
+
 export const UPCOMING_SERMONS: Sermon[] = [
   {
     id: '1',
